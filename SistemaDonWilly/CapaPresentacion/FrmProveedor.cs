@@ -48,7 +48,17 @@ namespace CapaPresentacion
         {
             dgvLista.DataSource = null;
             dgvLista.DataSource = _registros;
-            Util.FormatearGrilla(dgvLista, "idProveedor", "razonSocial", "documento", "direccion", "telefono", "estProveedor");
+
+            Util.FormatearGrilla(
+                dgvLista,
+                "idProveedor",
+                "razonSocial",
+                "documento",
+                "direccion",
+                "telefono",
+                "estProveedor"
+            );
+
             lblEstadoRegistro.Text = _registros.Count + " registro(s)";
         }
 

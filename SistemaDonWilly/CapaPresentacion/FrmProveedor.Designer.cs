@@ -40,36 +40,40 @@ namespace CapaPresentacion
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblEstadoRegistro = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlTitulo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.grpDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlTitulo
             // 
-            this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(122, 46, 22);
-            this.pnlTitulo.Height = 48;
-            this.pnlTitulo.Name = "pnlTitulo";
+            this.pnlTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(46)))), ((int)(((byte)(22)))));
             this.pnlTitulo.Controls.Add(this.lblTitulo);
+            this.pnlTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTitulo.Location = new System.Drawing.Point(0, 0);
+            this.pnlTitulo.Name = "pnlTitulo";
+            this.pnlTitulo.Size = new System.Drawing.Size(920, 48);
+            this.pnlTitulo.TabIndex = 0;
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitulo.ForeColor = System.Drawing.Color.White;
             this.lblTitulo.Location = new System.Drawing.Point(15, 12);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Text = "Mantenedor de proveedores (CUS-14)";
+            this.lblTitulo.Size = new System.Drawing.Size(353, 25);
             this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "Mantenedor de proveedores (CUS-14)";
             // 
             // lblBuscar
             // 
             this.lblBuscar.AutoSize = true;
             this.lblBuscar.Location = new System.Drawing.Point(20, 74);
             this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Text = "Buscar:";
+            this.lblBuscar.Size = new System.Drawing.Size(45, 15);
             this.lblBuscar.TabIndex = 1;
+            this.lblBuscar.Text = "Buscar:";
             // 
             // txtBuscar
             // 
@@ -80,49 +84,44 @@ namespace CapaPresentacion
             // 
             // btnBuscar
             // 
-            this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Location = new System.Drawing.Point(325, 68);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(90, 30);
-            this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TabIndex = 3;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnRefrescar
             // 
-            this.btnRefrescar.UseVisualStyleBackColor = true;
             this.btnRefrescar.Location = new System.Drawing.Point(423, 68);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(90, 30);
-            this.btnRefrescar.Text = "Ver todos";
             this.btnRefrescar.TabIndex = 4;
+            this.btnRefrescar.Text = "Ver todos";
+            this.btnRefrescar.UseVisualStyleBackColor = true;
             this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // dgvLista
             // 
             this.dgvLista.AllowUserToAddRows = false;
             this.dgvLista.AllowUserToDeleteRows = false;
-            this.dgvLista.ReadOnly = true;
-            this.dgvLista.MultiSelect = false;
-            this.dgvLista.RowHeadersVisible = false;
-            this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvLista.AllowUserToResizeRows = false;
             this.dgvLista.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvLista.BackgroundColor = System.Drawing.Color.White;
-            this.dgvLista.AllowUserToResizeRows = false;
             this.dgvLista.Location = new System.Drawing.Point(20, 106);
+            this.dgvLista.MultiSelect = false;
             this.dgvLista.Name = "dgvLista";
+            this.dgvLista.ReadOnly = true;
+            this.dgvLista.RowHeadersVisible = false;
+            this.dgvLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvLista.Size = new System.Drawing.Size(880, 210);
             this.dgvLista.TabIndex = 5;
-            this.dgvLista.SelectionChanged += new System.EventHandler(this.dgvLista_SelectionChanged);
             this.dgvLista.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvLista_CellDoubleClick);
+            this.dgvLista.SelectionChanged += new System.EventHandler(this.dgvLista_SelectionChanged);
             // 
             // grpDatos
             // 
-            this.grpDatos.Location = new System.Drawing.Point(20, 326);
-            this.grpDatos.Name = "grpDatos";
-            this.grpDatos.Size = new System.Drawing.Size(880, 136);
-            this.grpDatos.Text = "  Datos del registro  ";
-            this.grpDatos.TabIndex = 6;
             this.grpDatos.Controls.Add(this.lblRazonSocial);
             this.grpDatos.Controls.Add(this.txtRazonSocial);
             this.grpDatos.Controls.Add(this.lblDocumento);
@@ -131,19 +130,26 @@ namespace CapaPresentacion
             this.grpDatos.Controls.Add(this.txtDireccion);
             this.grpDatos.Controls.Add(this.lblTelefono);
             this.grpDatos.Controls.Add(this.txtTelefono);
+            this.grpDatos.Location = new System.Drawing.Point(20, 326);
+            this.grpDatos.Name = "grpDatos";
+            this.grpDatos.Size = new System.Drawing.Size(880, 136);
+            this.grpDatos.TabIndex = 6;
+            this.grpDatos.TabStop = false;
+            this.grpDatos.Text = "  Datos del registro  ";
             // 
             // lblRazonSocial
             // 
             this.lblRazonSocial.AutoSize = true;
             this.lblRazonSocial.Location = new System.Drawing.Point(20, 36);
             this.lblRazonSocial.Name = "lblRazonSocial";
-            this.lblRazonSocial.Text = "Razon social:";
+            this.lblRazonSocial.Size = new System.Drawing.Size(75, 15);
             this.lblRazonSocial.TabIndex = 7;
+            this.lblRazonSocial.Text = "Razón social:";
             // 
             // txtRazonSocial
             // 
-            this.txtRazonSocial.MaxLength = 100;
             this.txtRazonSocial.Location = new System.Drawing.Point(130, 32);
+            this.txtRazonSocial.MaxLength = 100;
             this.txtRazonSocial.Name = "txtRazonSocial";
             this.txtRazonSocial.Size = new System.Drawing.Size(280, 23);
             this.txtRazonSocial.TabIndex = 8;
@@ -153,13 +159,14 @@ namespace CapaPresentacion
             this.lblDocumento.AutoSize = true;
             this.lblDocumento.Location = new System.Drawing.Point(450, 36);
             this.lblDocumento.Name = "lblDocumento";
-            this.lblDocumento.Text = "Documento:";
+            this.lblDocumento.Size = new System.Drawing.Size(73, 15);
             this.lblDocumento.TabIndex = 9;
+            this.lblDocumento.Text = "Documento:";
             // 
             // txtDocumento
             // 
-            this.txtDocumento.MaxLength = 15;
             this.txtDocumento.Location = new System.Drawing.Point(560, 32);
+            this.txtDocumento.MaxLength = 15;
             this.txtDocumento.Name = "txtDocumento";
             this.txtDocumento.Size = new System.Drawing.Size(160, 23);
             this.txtDocumento.TabIndex = 10;
@@ -169,13 +176,14 @@ namespace CapaPresentacion
             this.lblDireccion.AutoSize = true;
             this.lblDireccion.Location = new System.Drawing.Point(20, 70);
             this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Text = "Direccion:";
+            this.lblDireccion.Size = new System.Drawing.Size(60, 15);
             this.lblDireccion.TabIndex = 11;
+            this.lblDireccion.Text = "Dirección:";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.MaxLength = 120;
             this.txtDireccion.Location = new System.Drawing.Point(130, 66);
+            this.txtDireccion.MaxLength = 120;
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(280, 23);
             this.txtDireccion.TabIndex = 12;
@@ -185,90 +193,95 @@ namespace CapaPresentacion
             this.lblTelefono.AutoSize = true;
             this.lblTelefono.Location = new System.Drawing.Point(450, 70);
             this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Text = "Telefono:";
+            this.lblTelefono.Size = new System.Drawing.Size(56, 15);
             this.lblTelefono.TabIndex = 13;
+            this.lblTelefono.Text = "Teléfono:";
             // 
             // txtTelefono
             // 
-            this.txtTelefono.MaxLength = 15;
             this.txtTelefono.Location = new System.Drawing.Point(560, 66);
+            this.txtTelefono.MaxLength = 15;
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(160, 23);
             this.txtTelefono.TabIndex = 14;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Location = new System.Drawing.Point(20, 476);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(100, 30);
-            this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.TabIndex = 15;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Location = new System.Drawing.Point(128, 476);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(100, 30);
-            this.btnModificar.Text = "Modificar";
             this.btnModificar.TabIndex = 16;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEstado
             // 
-            this.btnEstado.UseVisualStyleBackColor = true;
             this.btnEstado.Location = new System.Drawing.Point(236, 476);
             this.btnEstado.Name = "btnEstado";
             this.btnEstado.Size = new System.Drawing.Size(120, 30);
-            this.btnEstado.Text = "Desactivar";
             this.btnEstado.TabIndex = 17;
+            this.btnEstado.Text = "Desactivar";
+            this.btnEstado.UseVisualStyleBackColor = true;
             this.btnEstado.Click += new System.EventHandler(this.btnEstado_Click);
             // 
             // btnGuardar
             // 
-            this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Location = new System.Drawing.Point(580, 476);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(100, 30);
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.TabIndex = 18;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 
-            this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Location = new System.Drawing.Point(688, 476);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 30);
-            this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TabIndex = 19;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // btnSalir
             // 
-            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSalir.Location = new System.Drawing.Point(796, 476);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(104, 30);
-            this.btnSalir.Text = "Salir";
             this.btnSalir.TabIndex = 20;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // lblEstadoRegistro
             // 
             this.lblEstadoRegistro.AutoSize = true;
-            this.lblEstadoRegistro.ForeColor = System.Drawing.Color.FromArgb(122, 46, 22);
             this.lblEstadoRegistro.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblEstadoRegistro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(122)))), ((int)(((byte)(46)))), ((int)(((byte)(22)))));
             this.lblEstadoRegistro.Location = new System.Drawing.Point(364, 483);
             this.lblEstadoRegistro.Name = "lblEstadoRegistro";
-            this.lblEstadoRegistro.Text = "";
+            this.lblEstadoRegistro.Size = new System.Drawing.Size(0, 15);
             this.lblEstadoRegistro.TabIndex = 21;
             // 
             // FrmProveedor
             // 
+            this.AcceptButton = this.btnGuardar;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.CancelButton = this.btnSalir;
             this.ClientSize = new System.Drawing.Size(920, 528);
             this.Controls.Add(this.pnlTitulo);
             this.Controls.Add(this.lblBuscar);
@@ -285,22 +298,20 @@ namespace CapaPresentacion
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.lblEstadoRegistro);
             this.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Name = "FrmProveedor";
-            this.Text = "Mantenedor de proveedores (CUS-14)";
-            this.AcceptButton = this.btnGuardar;
-            this.CancelButton = this.btnSalir;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.MaximizeBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.BackColor = System.Drawing.Color.White;
+            this.MaximizeBox = false;
+            this.Name = "FrmProveedor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Mantenedor de proveedores (CUS-14)";
             this.Load += new System.EventHandler(this.FrmProveedor_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.pnlTitulo.ResumeLayout(false);
             this.pnlTitulo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).EndInit();
             this.grpDatos.ResumeLayout(false);
             this.grpDatos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
